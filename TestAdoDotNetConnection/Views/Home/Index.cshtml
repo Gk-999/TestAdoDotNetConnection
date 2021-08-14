@@ -1,0 +1,28 @@
+﻿
+@model List<TestAdoDotNetConnection.Models.Employee>
+    
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Salary</th>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.City</td>
+                            <td>@item.Salary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+

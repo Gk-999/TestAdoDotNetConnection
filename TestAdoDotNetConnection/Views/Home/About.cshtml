@@ -1,0 +1,57 @@
+﻿
+@model TestAdoDotNetConnection.DAL.People
+    
+    <div class="container">
+        <div class="row">
+            <h1>Employees</h1>
+            <hr />
+            <table class="table">
+                <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Salary</th>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Employess)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.City</td>
+                            <td>@item.Salary</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <h1>Students</h1>
+            <hr />
+            <table class="table">
+                <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Marks</th>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Students)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.City</td>
+                            <td>@item.Marks</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
